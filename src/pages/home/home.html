@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Light Timer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+    How long do you want the flash to be on ? <ion-icon name="timer"></ion-icon>
+    <ion-item>
+      <ion-label color="primary">Hours : </ion-label>
+      <ion-input [(ngModel)]="hours" placeholder="0"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Minutes : </ion-label>
+      <ion-input [(ngModel)]="minutes" placeholder="0"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Seconds : </ion-label>
+      <ion-input [(ngModel)]="seconds" placeholde="0"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button full color=primary (click)=validate()>Start!</button>
+    
+</ion-content>
